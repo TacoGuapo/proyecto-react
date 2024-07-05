@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { DataContext } from '../Context/DataProvider';
 import Modal from './Modal';
-import bg1 from '../assets/images/cloud-background.svg';
 
+const bg1 = 'cloud-background.svg'
 const WeatherLeft = () => {
   const { weatherData, unit, updateCity, API_KEY, updateWeatherByCoordinates } = useContext(DataContext);
   const [showModal, setShowModal] = useState(false);
